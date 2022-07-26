@@ -1,0 +1,172 @@
+@font-face {
+    font-family: oswaldBold;
+    src: url(../fuentes/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: oswaldRegular;
+    src: url(../fuentes/Oswald-Regular.ttf);
+}
+
+body {
+    background-color: #212529;
+    font-family: oswaldRegular;
+    color: white;
+    max-width: 1700px;
+    margin: auto;
+}
+
+header {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.contIMG {
+    margin: auto;
+}
+
+.botellas {
+    width: 80%;
+}
+
+.banner {
+    padding: 0em 4em;
+}
+
+#home h2 span {
+    background-color: white;
+    color: black;
+    line-height: 1.5em;
+}
+
+.detalleProducto img {
+    width: 90%;
+    max-width: 331px;
+}
+
+.btn-negro {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-negro:hover {
+    border-radius: 50px;
+    border: 1px black solid;
+}
+
+.telefono img {
+    width: 45px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+.form-check-label {
+    color: black;
+}
+
+/* MANIFEST  */
+.agregar-alerta{
+    display: none;
+    color: black;
+     width: 100%;
+     line-height: 2em;
+     text-align: center;
+     text-decoration: none;
+     padding-left: 10px ;
+     min-height: 10%;
+     position: fixed;
+     bottom: 0;
+     justify-content: flex-end;
+     flex-direction: column;
+     flex-grow: 1;
+     animation-duration: 1s;
+     animation-fill-mode: both;
+     background: #fff url(../img/app-icon72.png) no-repeat 5% 50%; 
+ }
+ @keyframes efecto {
+   from,
+   60%,
+   75%,
+   90%,
+   to {
+     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   }
+   from {
+     opacity: 0;
+     transform: translate3d(0, 3000px, 0);
+   }
+   60% {
+     opacity: 1;
+     transform: translate3d(0, -20px, 0);
+   }
+   75% {
+     transform: translate3d(0, 10px, 0);
+   }
+   90% {
+     transform: translate3d(0, -5px, 0);
+   }
+   to {
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ 
+ 
+ .efecto {
+     animation-name: efecto;
+ }
+/* FIN MANIFEST   */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner {
+        padding: 6em 2em;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #home h2 {
+        font-size: 2.5em;
+    }
+    .banner {
+        padding: 6em 3em;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #home h2 {
+        font-size: 3em;
+    }
+    .banner {
+        padding: 6em 2em;
+        font-size: 1.3em;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    #home h2 {
+        font-size: 3em;
+    }
+    .banner {
+        padding: 6em 4em;
+        font-size: 1.3em;
+    }
+}

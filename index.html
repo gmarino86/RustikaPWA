@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaston Marino - PWA TP2</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- ESTILOS  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Cache Dinamico -->
+    <script src="scripts/script.js"></script>
+    <!-- Manifest -->
+    <script src="js/application.js"></script>
+    <!-- Importo el VUE  -->
+    <script src="scripts/vue.js"></script>
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="apple-mobile-web-app-title" content="Rustika">
+
+    <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPhone 5+ -->
+    <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPhone, retina -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#212529"/>
+
+    <link rel="apple-touch-icon" href="meta/logo-80x80.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="meta/logo-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="meta/logo-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="meta/logo-167x167.png">
+
+    <meta name="application-name" content="Rustika" />
+    <meta name="msapplication-square70x70logo" content="meta/logo-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="meta/logo-152x152.png" />
+    <meta name="msapplication-wide310x150logo" content="meta/logo-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="meta/logo-310x310.png" />
+    <meta name="msapplication-TileColor" content="#212529" />
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+
+</head>
+<body>
+    <div id="app">
+    <header class="container-fluid">
+
+        <h1>Rustika</h1>
+        <div class="row">
+
+            <nav class="col navbar navbar-expand-sm navbar-dark">
+
+                <button class="navbar-toggler ml-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#barra"
+                    aria-controls="barra"
+                    aria-expanded="false"
+                    aria-label="Menú Hamburguesa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-md-end" id="barra">
+                    <ul class="navbar-nav text-center ml-sm-auto">
+                        <li class="nav-item">
+                            <router-link class='nav-link' to="/" exact>Home</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class='nav-link' to="/productos" exact>Productos</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class='nav-link' to="/contacto" exact>Contacto</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class='nav-link' to="/clientes" exact>Clientes</router-link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- TRANSICION  -->
+    <transition mode="out-in" enter-active-class="animate__animated  animate__fadeIn">
+        <router-view></router-view>
+    </transition>
+
+    </div>
+
+    <footer class="text-light text-center my-5">
+        <ul>
+            <li>Gastón Marino</li>
+            <li>Diseño Web y Desarrollo</li>
+            <li>dwn3a | Aplicaciones para Dispositivos Móviles</li>
+        </ul>
+    </footer>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/animaScroll.js"></script>
+
+
+    <!-- ARCHIVOS DE VUE  -->
+    <script src="scripts/vue-router.js"></script>
+    <script src="scripts/componentes/inicio.js"></script>
+    <script src="scripts/componentes/productos.js"></script>
+    <script src="scripts/componentes/items.js"></script>
+    <script src="scripts/componentes/contacto.js"></script>
+    <script src="scripts/componentes/clientes.js"></script>
+    <script src="scripts/componentes/cliente-list.js"></script>
+    <script src="scripts/rutas/rutas.js"></script>
+
+</body>
+</html>
