@@ -62,6 +62,9 @@ Vue.component ('gm-inicio', {
 		
 			</div>
 		</article>
+		<div class="agregar-alerta">
+			<p class="mensaje">Instalar</p>
+		</div>
 	</div>
 	`,
 	mounted:function(){

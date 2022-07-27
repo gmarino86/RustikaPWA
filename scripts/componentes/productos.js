@@ -51,16 +51,11 @@ Vue.component ('gm-productos',{
     },
     template: `
         <section class="container" id="productos">
-        <div v-html="titulo">
-        </div>
-
+        <div v-html="titulo"></div>
 
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-
-                <!-- ACA ARRANCA EL V-FOR  -->
-                
-				
+                <!-- ACA ARRANCA EL V-FOR  -->				
 				<componente-items v-for="item in productos"
 					v-bind:key="item.id"
 					v-bind:id="item.id"
@@ -91,6 +86,5 @@ Vue.component ('gm-productos',{
 			losNav[3].classList.remove("active");
 			losNav[1].classList.add("active");
 		},
-
 	},
 })

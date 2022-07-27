@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaston Marino - PWA TP2</title>
+    <title>Gaston Marino - PWA Final</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- ESTILOS  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/animate.css"/>
 
-    <!-- Cache Dinamico -->
     <script src="scripts/script.js"></script>
-    <!-- Manifest -->
-    <script src="js/application.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <!-- <script src="js/application.js"></script> -->
     <!-- Importo el VUE  -->
     <script src="scripts/vue.js"></script>
-
-    <link rel="manifest" href="manifest.json">
+    <script src="scripts/filters.js"></script>
 
     <meta name="apple-mobile-web-app-title" content="Rustika">
-
     <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-    <!-- iPhone 5+ -->
     <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-    <!-- iPhone, retina -->
+    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#212529"/>
@@ -91,6 +85,10 @@
         <router-view></router-view>
     </transition>
 
+    </div>
+
+    <div class="agregar-alerta" class="efecto">
+        <p class="mensaje">Instalar</p>
     </div>
 
     <footer class="text-light text-center my-5">

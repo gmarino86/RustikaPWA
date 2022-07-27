@@ -1,6 +1,6 @@
 {
   "name": "Rustika",
-  "short_name": "Cervecería",
+  "short_name": "Rustika",
   "description": "Es una PWA de Rustika",
   "icons": [
     {
@@ -11,8 +11,7 @@
     {
       "src": "img/app-icon72.png",
       "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
       "src": "img/app-icon96.png",
